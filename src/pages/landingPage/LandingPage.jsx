@@ -16,7 +16,7 @@ const DEFAULT_EVENT_CONFIG = {
 const LandingPage = () => {
   const [eventConfig, setEventConfig] = useState({ ...DEFAULT_EVENT_CONFIG });
   useEffect(() => {
-    fetch(`https://tah25-api.onrender.com/event/info`)
+    fetch(`https://sft-automation-hackathon-api.onrender.com/event/info`)
         .then(response => response.json())
         .then(data => setEventConfig({ ...DEFAULT_EVENT_CONFIG,...data}));
   }, []);

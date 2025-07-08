@@ -22,7 +22,7 @@ const TaskPage = () => {
   const { id } = useParams();
   const [taskConfig, setTaskConfig] = useState({ ...DEFAULT_TASK_CONFIG });
   useEffect(() => {
-    fetch(`https://tah25-api.onrender.com/tasks/${id}`)
+    fetch(`https://sft-automation-hackathon-api.onrender.com/tasks/${id}`)
         .then(response => response.json())
         .then(data => setTaskConfig({ ...DEFAULT_TASK_CONFIG,...data}));
   }, [id]);

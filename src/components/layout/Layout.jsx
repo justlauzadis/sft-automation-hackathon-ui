@@ -18,7 +18,7 @@ const Layout = ({children}) => {
     
     const [eventConfig, setEventConfig] = useState({ ...DEFAULT_SHALLOW_EVENT_CONFIG });
     useEffect(() => {
-      fetch(`https://tah25-api.onrender.com/event/info/shallow`)
+      fetch(`https://sft-automation-hackathon-api.onrender.com/event/info/shallow`)
           .then(response => response.json())
           .then(data => setEventConfig({ ...DEFAULT_SHALLOW_EVENT_CONFIG,...data}));
     }, []);
@@ -30,7 +30,7 @@ const Layout = ({children}) => {
         setPercentage(Math.round(Math.random()*20));
 },[percentage]);
     useEffect(() => {
-        fetch(`https://tah25-api.onrender.com/tasks/count`)
+        fetch(`https://sft-automation-hackathon-api.onrender.com/tasks/count`)
             .then(response => response.json())
             .then(data => setCount(data.count));
       }, [count]);
