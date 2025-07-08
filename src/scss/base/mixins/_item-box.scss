@@ -1,0 +1,11 @@
+@import '../colors';
+
+@mixin item-box {
+  border: 8px solid;
+  padding: 0.5rem 1rem;
+}
+
+@mixin item-box-yellow {
+  border: 8px solid $_color-yellow;
+  padding: 0.8rem 1.2rem;
+}

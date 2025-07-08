@@ -1,0 +1,3 @@
+@function rem-convert($size) {
+  @return #{strip-unit($size) / strip-unit($base-font-size)}rem;
+}

@@ -1,0 +1,9 @@
+@function round-number($number, $digits: 0, $mode: ceil) {
+    $n: 1;
+    $number: strip-unit($number);
+    $digits: strip-unit($digits);
+    @for $i from 1 through $digits {
+        $n: $n * 10;
+    }
+    @return ceil($number * $n) / $n;
+}

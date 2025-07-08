@@ -1,0 +1,165 @@
+// sass-lint:disable no-duplicate-properties
+@mixin root-colors {
+    #{--light-color}: $white;
+    #{--dark-color}: $black;
+
+    #{--gray-40}: $gray-50;
+    #{--gray-50}: $gray-50;
+    #{--gray-100}: $gray-100;
+    #{--gray-150}: $gray-150;
+
+    #{--gray-300}: $gray-300;
+    #{--gray-350}: $gray-350;
+
+    #{--gray-400}: $gray-400;
+    #{--gray-450}: $gray-450;
+    #{--gray-500}: $gray-500;
+    #{--gray-550}: $gray-550;
+
+    #{--blue-100}: $blue-100;
+    #{--blue-200}: $blue-200;
+    #{--blue-300}: $blue-300;
+    #{--blue-500}: $blue;
+    #{--blue-600}: $blue-600;
+    #{--blue-700}: $blue-700;
+
+    #{--primary-color}: $blue;
+    #{--link-color}: $blue;
+    #{--link-color-hover}: $blue-600;
+
+    #{--purple-200}: $purple-200;
+    #{--purple-300}: $purple-300;
+    #{--purple-500}: $purple;
+    #{--purple-600}: $purple-600;
+
+    #{--link-color-purple}: $purple;
+    #{--link-color-purple-hover}: $purple-600;
+
+    #{--gradient-bg}: $gradient-bg-light-color;
+
+    #{--aqua-600}: $aqua-600;
+
+    .inverted {
+        #{--light-color}: $black;
+        #{--dark-color}: $white;
+
+        #{--gray-40}: $gray-560;
+        #{--gray-50}: $gray-550;
+        #{--gray-100}: $gray-500;
+        #{--gray-150}: $gray-450;
+
+        #{--gray-300}: $gray-400;
+        #{--gray-350}: $gray-300;
+
+        #{--gray-400}: $gray-200;
+        #{--gray-450}: $gray-150;
+        #{--gray-500}: $gray-100;
+        #{--gray-550}: $gray-50;
+
+        #{--blue-100}: $blue-700;
+        #{--blue-200}: $blue-600;
+        #{--blue-300}: $blue;
+        #{--blue-500}: $blue-300;
+        #{--blue-600}: $blue-200;
+        #{--blue-700}: $blue-100;
+
+        #{--primary-color}: $blue-300;
+        #{--link-color}: $blue-300;
+        #{--link-color-hover}: $blue-600;
+
+        #{--purple-200}: $purple-600;
+        #{--purple-300}: $purple;
+        #{--purple-500}: $purple-300;
+        #{--purple-600}: $purple-200;
+
+        #{--link-color-purple}: $purple-300;
+        #{--link-color-purple-hover}: $purple-200;
+
+        #{--aqua-600}: $aqua-400;
+    }
+};
+
+:root {
+    @include root-colors;
+}
+
+.dark-theme {
+    #{--light-color}: $black;
+    #{--dark-color}: $white;
+
+    #{--gray-40}: $gray-560;
+    #{--gray-50}: $gray-550;
+    #{--gray-100}: $gray-500;
+    #{--gray-150}: $gray-450;
+
+    #{--gray-300}: $gray-400;
+    #{--gray-350}: $gray-300;
+
+    #{--gray-400}: $gray-200;
+    #{--gray-450}: $gray-150;
+    #{--gray-500}: $gray-100;
+    #{--gray-550}: $gray-50;
+
+    #{--blue-100}: $blue-700;
+    #{--blue-200}: $blue-600;
+    #{--blue-300}: $blue;
+    #{--blue-500}: $blue-300;
+    #{--blue-600}: $blue-200;
+    #{--blue-700}: $blue-100;
+
+    #{--primary-color}: $blue-300;
+    #{--link-color}: $blue-300;
+    #{--link-color-hover}: $blue-600;
+
+    #{--purple-200}: $purple-600;
+    #{--purple-300}: $purple;
+    #{--purple-500}: $purple-300;
+    #{--purple-600}: $purple-200;
+
+    #{--link-color-purple}: $purple-300;
+    #{--link-color-purple-hover}: $purple-200;
+
+    #{--gradient-bg}: $gradient-bg-dark-color;
+
+    #{--aqua-600}: $aqua-400;
+
+    .inverted {
+        #{--light-color}: $white;
+        #{--dark-color}: $black;
+
+        #{--gray-40}: $gray-50;
+        #{--gray-50}: $gray-50;
+        #{--gray-100}: $gray-100;
+        #{--gray-150}: $gray-150;
+
+        #{--gray-300}: $gray-300;
+        #{--gray-350}: $gray-350;
+
+        #{--gray-400}: $gray-400;
+        #{--gray-450}: $gray-450;
+        #{--gray-500}: $gray-500;
+        #{--gray-550}: $gray-550;
+
+        #{--blue-100}: $blue-100;
+        #{--blue-200}: $blue-200;
+        #{--blue-300}: $blue-300;
+        #{--blue-500}: $blue;
+        #{--blue-600}: $blue-600;
+        #{--blue-700}: $blue-700;
+
+        #{--primary-color}: $blue;
+        #{--link-color}: $blue;
+        #{--link-color-hover}: $blue-600;
+
+        #{--purple-200}: $purple-200;
+        #{--purple-300}: $purple-300;
+        #{--purple-500}: $purple;
+        #{--purple-600}: $purple-600;
+
+        #{--link-color-purple}: $purple;
+        #{--link-color-purple-hover}: $purple-600;
+
+        #{--aqua-600}: $aqua-600;
+    }
+}
+// sass-lint:enable no-duplicate-properties

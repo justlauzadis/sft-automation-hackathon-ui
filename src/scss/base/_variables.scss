@@ -1,0 +1,51 @@
+@import './colors';
+
+$base-line-height: 1.5;
+$base-font-size: 16px;
+
+// Fonts
+$font-avenir: 'Avenir Next W02', sans-serif; // 400, 400 italic, 500, 700, 800, 900
+$body-font: $font-avenir;
+
+//Golden Breakpoints
+$desktop-4k: 3840;
+$desktop-2560: 2560;
+$desktop-1440: 1440;
+$tablet-l-1024: 1024; // landscape
+$tablet-p-768: 768; // portrait
+$mobile-480: 480;
+
+$mobile-nav-breakpoint-max: 1300;
+$mobile-nav-breakpoint-min: 1301;
+
+$page-width: 1440;
+$page-padding-desktop: 120;
+$page-padding-tablet: 56;
+$page-padding-mobile: 20;
+
+$padding-vertical-100: rem-convert(100px);
+$padding-vertical-100-mobile: rem-convert(64px);
+
+$padding-vertical-150: rem-convert(150px);
+$padding-vertical-150-mobile: rem-convert(90px);
+
+$header-height: rem-convert(96px);
+$footer-height: rem-convert(96px);
+$footer-height-mobile: rem-convert(190px);
+
+$border-radius: 10px;
+$border-color: $aqua-450;
+
+// Min max resolutions
+$page-min-width: 200px;
+$page-min-height: 600px;
+
+// Sidebar
+$page-sidebar-width: 100px;
+
+// Default spacing
+
+$page-default-padding: 8px;
+
+$spacer-medium: 16px;
+$spacer-large: 32px;

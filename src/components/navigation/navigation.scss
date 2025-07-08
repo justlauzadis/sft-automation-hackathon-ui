@@ -1,0 +1,44 @@
+@import '../../scss/base/colors';
+@import '../../scss/base/mixins/item-box';
+@import '../../scss/base/variables';
+
+.nav-list {
+  list-style: none;
+  margin-block: 0;
+  padding-inline: 0;
+  text-align: center;
+
+  &__item {
+    display: flex;
+    margin: 1.2rem 0;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &-link {
+      @include item-box;
+      background-color: transparent;
+      border-color: $border-color;
+      box-sizing: border-box;
+      color: $white;
+      width: 100%;
+      font-size: 1.375rem;
+      font-weight: 700;
+
+      &:hover,
+      &:focus,
+      &--active {
+        background-color: $_color-blue-dark;
+      }
+
+      &:active {
+        color: $white;
+      }
+    }
+  }
+}

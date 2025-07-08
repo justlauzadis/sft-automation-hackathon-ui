@@ -1,0 +1,58 @@
+@mixin slick-button-styles {
+  left: 50%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  transform: translateX(-50%);
+
+  li {
+    display: inline-block;
+    height: auto;
+    margin: 0 rem-convert(3px);
+    vertical-align: middle;
+    width: auto;
+  }
+
+  button {
+    display: block;
+    height: rem-convert(10px);
+    margin: 0;
+    padding: 0;
+    transition:
+      width 0.3s,
+      height 0.3s;
+    vertical-align: middle;
+    width: rem-convert(10px);
+
+    &:before {
+      background: $white;
+      border: 0;
+      border-radius: 50%;
+      font-size: 0;
+      height: rem-convert(10px);
+      opacity: 1;
+      transition:
+        width 0.3s,
+        height 0.3s,
+        background 0.3s;
+      width: rem-convert(10px);
+    }
+
+    &:focus {
+      outline: -webkit-focus-ring-color auto 5px; // sass-lint:disable-line no-vendor-prefixes
+    }
+  }
+}
+
+@mixin slick-button-active-styles {
+  button {
+    height: rem-convert(14px);
+    width: rem-convert(14px);
+
+    &:before {
+      height: rem-convert(14px);
+      width: rem-convert(14px);
+    }
+  }
+}

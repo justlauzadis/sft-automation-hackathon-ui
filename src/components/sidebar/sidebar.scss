@@ -1,0 +1,9 @@
+@import '../../scss/base/variables';
+
+.sidebar {
+  grid-column: 1/2;
+  padding-right: $page-default-padding * 0.5;
+  padding-top: $page-default-padding * 4;
+  max-width: 200px;
+  min-width: 50px;
+}

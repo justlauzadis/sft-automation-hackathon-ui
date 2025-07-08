@@ -1,0 +1,12 @@
+@mixin respond-to($size, $dir, $orientation: width) {
+    @if ($size == retina) {
+        // sass-lint:disable-block no-vendor-prefixes
+        @media only screen and (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2) {
+            @content;
+        }
+    } @else if ($size and $dir) {
+        @media screen and (#{$dir}-#{$orientation}: ($size + px)) {
+            @content;
+        }
+    }
+}

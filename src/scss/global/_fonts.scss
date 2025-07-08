@@ -1,0 +1,59 @@
+// sass-lint:disable-all
+$_path: '../fonts';
+
+@font-face {
+    src: url($_path + '/fd1f3434-eb5b-4767-8593-e6cfcbfd1558.woff2') format('woff2'), url($_path + '/f6ebea36-fb7c-4458-a43e-2112c48c17e4.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 400;
+    font-family: 'Avenir Next W02';
+}
+
+@font-face {
+    src: url($_path + '/ba174273-31b6-4439-9275-9e0bff3b6d5b.woff2') format('woff2'), url($_path + '/93be27ad-cb3a-44c5-a686-5b2bb342bbe3.woff') format('woff');
+    font-display: swap;
+    font-style: italic;
+    font-weight: 400;
+    font-family: 'Avenir Next W02';
+}
+
+@font-face {
+    src: url($_path + '/bb590848-4012-46d6-a8d5-48c9893a176b.woff2') format('woff2'), url($_path + '/3a42a252-67ff-4186-88cf-762f56719ca1.woff') format('woff');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 500;
+    font-family: 'Avenir Next W02';
+}
+
+@font-face {
+    src: url($_path + '/7195d5d0-582f-42d4-86ca-9da8dc31146e.woff2') format('woff2'), url($_path + '/0417e965-6ae1-4395-8f71-f61ea767d523.woff') format('woff');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'Avenir Next W02';
+}
+
+@font-face {
+    src: url($_path + '/b86524f7-009e-4c08-a266-c43f1fb68e5e.woff2') format('woff2'), url($_path + '/e40e6ac5-f2bd-4d65-baf7-b1e397d7fdcc.woff') format('woff');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+    font-family: 'Avenir Next W02';
+}
+
+@font-face {
+    src: url($_path + '/b729a5ee-0221-40db-9a76-7b9e9b747f65.woff2') format('woff2'), url($_path + '/51a56502-44d2-4d70-808f-fc822da45209.woff') format('woff');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 800;
+    font-family: 'Avenir Next W02';
+}
+
+@font-face {
+    src: url($_path + '/74180223-99f0-4cd7-b823-0e6f0952054c.woff2') format('woff2'), url($_path + '/8d2e93bb-cf4f-42f3-9637-a2df4c487681.woff') format('woff');
+    font-display: swap;
+    font-style: normal;
+    font-weight: 900;
+    font-family: 'Avenir Next W02';
+}
+// sass-lint:enable-all

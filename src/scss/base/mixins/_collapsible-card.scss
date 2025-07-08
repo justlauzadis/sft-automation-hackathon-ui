@@ -1,0 +1,116 @@
+@mixin collapsible-card-button-styles {
+  align-items: center;
+  background-color: var(--gray-100);
+  border: 0;
+  border-radius: rem-convert(5px);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: rem-convert(20px);
+  position: relative;
+  width: 100%;
+  z-index: 1;
+
+  &:active {
+    color: var(--dark-color);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--gray-150);
+  }
+}
+
+@mixin collapsible-card-description-styles {
+  max-width: rem-convert(615px);
+  opacity: 0;
+  padding: rem-convert(15px);
+  transition: opacity 0.2s ease-in-out;
+
+  .open & {
+    opacity: 1;
+    transition: opacity 0.15s 0.15s ease-in-out;
+  }
+
+  div,
+  p {
+    margin: 0 0 rem-convert(20px);
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+@mixin collapsible-card-description-wrapper-styles {
+  background-color: var(--light-color);
+  border: rem-convert(5px) solid var(--gray-100);
+  border-radius: rem-convert(5px);
+  color: var(--gray-450);
+  font-weight: 600;
+  margin: rem-convert(-5px) 0 0;
+  max-height: rem-convert(0);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;
+  visibility: hidden;
+  z-index: 0;
+
+  .open & {
+    max-height: rem-convert(900px);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+}
+
+@mixin collapsible-card-title-styles {
+  @include heading(h3);
+  color: var(--gray-500);
+  font-size: rem-convert(22px);
+  font-weight: 700;
+  margin: 0;
+  text-align: left;
+
+  @include respond-to($tablet-l-1024, max) {
+    font-size: rem-convert(18px);
+  }
+}
+
+@mixin collapsible-card-toggle-icon-styles {
+  display: block;
+  flex: 0 0 auto;
+  height: rem-convert(22px);
+  line-height: 1;
+  margin-left: rem-convert(22px);
+  position: relative;
+  width: rem-convert(22px);
+
+  &:before,
+  &:after {
+    background: var(--primary-color);
+    content: '';
+    height: 4px;
+    left: 0;
+    position: absolute;
+    top: rem-convert(9px);
+    transition: transform 0.3s ease;
+    width: 22px;
+  }
+
+  &:after {
+    transform: rotate(90deg);
+    transform-origin: center;
+  }
+
+  &:before {
+    transform: rotate(180deg);
+  }
+
+  .open & {
+    &:before,
+    &:after {
+      transform: rotate(0deg);
+    }
+  }
+}

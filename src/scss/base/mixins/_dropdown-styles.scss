@@ -1,0 +1,105 @@
+@mixin dropdown-button {
+  background-color: transparent;
+  border: 0;
+  position: relative;
+
+  .arrow-down__stroke {
+    stroke: var(--dark-color);
+
+    .dark-header & {
+      stroke: $white;
+    }
+  }
+}
+
+@mixin dropdown-arrow-focus {
+  .arrow-down__stroke {
+    stroke: var(--link-color);
+
+    .dark-header & {
+      stroke: $blue-300;
+    }
+  }
+}
+
+@mixin dropdown-list-wrapper {
+  left: 50%;
+  margin: 0;
+  opacity: 0;
+  padding: rem-convert(16px) 0 0;
+  pointer-events: none;
+  position: absolute;
+  top: rem-convert(24px);
+  transform: translate(-50%, rem-convert(10px));
+  transition: 0.25s ease-in-out;
+  visibility: hidden;
+
+  .open-dropdown & {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, 0);
+    visibility: visible;
+  }
+}
+
+@mixin dropdown-list {
+  $dropdown-arrow-height: rem-convert(8px);
+
+  background-color: $black;
+  background-color: var(
+    --light-color
+  ); // sass-lint:disable-line no-duplicate-properties
+  border-radius: rem-convert(8px);
+  padding: rem-convert(20px) 0;
+  position: relative;
+
+  .dark-header & {
+    background-color: $white;
+  }
+
+  &:before {
+    @include position(absolute, null null 100% 50%);
+    background-color: transparent;
+    border: $dropdown-arrow-height solid transparent;
+    border-bottom-color: $black;
+    border-bottom-color: var(
+      --light-color
+    ); // sass-lint:disable-line no-duplicate-properties
+    content: '';
+    display: block;
+    height: 0;
+    margin: 0 0 0 rem-convert(-8px);
+    width: 0;
+
+    .dark-header & {
+      border-bottom-color: $white;
+    }
+  }
+}
+
+@mixin dropdown-item {
+  box-sizing: border-box;
+  color: $white;
+  color: var(--dark-color); // sass-lint:disable-line no-duplicate-properties
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 800;
+  line-height: 1.4;
+  padding: rem-convert(10px) rem-convert(32px);
+  width: 100%;
+
+  &:focus,
+  &:active,
+  &:hover {
+    color: var(--link-color);
+
+    .dark-header & {
+      color: $blue;
+    }
+  }
+
+  .dark-header & {
+    color: $black;
+  }
+}

@@ -1,0 +1,68 @@
+$white: #fff;
+$black: #12141c;
+
+$gray-50: #f8f7f8;
+$gray-100: #ededee;
+$gray-150: #d7dadd;
+$gray-200: #bbbcc0;
+$gray-300: #8d919a;
+$gray-350: #6b6b6b;
+$gray-400: #535765;
+$gray-450: #333645;
+$gray-500: #222636;
+$gray-550: #1c1f2c;
+$gray-560: #1b1d21;
+$gray-600: #161922;
+$gray: $gray-500;
+
+$aqua-400: #6ee4f1;
+$aqua-450: #26efe9;
+$aqua-500: #3ec3d1;
+$aqua-600: #3196ac;
+$aqua: $aqua-500;
+
+$blue-100: #c5d8ff;
+$blue-200: #96baff;
+$blue-300: #5d93ff;
+$blue-500: #2a72ff;
+$blue-600: #2458be;
+$blue-650: #6a46e8;
+$blue-700: #00359c;
+$blue-900: #000048;
+$blue: $blue-500;
+
+$purple-200: #d0b6ff;
+$purple-300: #b388ff;
+$purple-500: #9154ff;
+$purple-600: #5a30a3;
+$purple: $purple-500;
+
+$coral-400: #ff869a;
+$coral-500: #fb5873;
+$coral-600: #ff3454;
+$coral: $coral-500;
+
+$link-color: $blue;
+$body-color: $gray-500;
+$heading-color: $gray;
+
+$gradient-bg-primary: #150df7; //linear-gradient(5deg, $aqua-450 1%,$blue-650 10%,$blue-900 30%,$blue-900 70%, $aqua-450);
+$gradient-bg-light-color: linear-gradient(
+  270deg,
+  rgba($gray-300, 0.5),
+  rgba($gray-150, 0.9) 80%
+);
+$gradient-bg-dark-color: linear-gradient(
+  270deg,
+  rgba($gray-600, 0.3),
+  rgba($gray-600, 0.9) 80%
+);
+
+$_color-red-light: #ffc6cf;
+$_color-red: #b81f2d;
+$_color-blue: #6aa2dc;
+$_color-blue-dark: #2f78c4;
+$_color-yellow: #e9c71d;
+$_color-brown: #705f5f;
+$_color-brown-semi-dark: #3c3637;
+$_color-brown-dark: #282324;

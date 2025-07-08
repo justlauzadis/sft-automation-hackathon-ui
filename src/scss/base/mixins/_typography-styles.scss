@@ -1,0 +1,31 @@
+@mixin hero-title-style {
+  color: inherit;
+  margin-bottom: rem-convert(20px);
+  margin-top: 0;
+}
+
+@mixin hero-description-style {
+  @include heading(h4);
+  color: inherit;
+  line-height: 1.68;
+}
+
+@mixin info-tag-style {
+  color: var(--gray-350);
+  font-size: rem-convert(14px);
+  font-weight: 700;
+  margin: 0 0 rem-convert(4px);
+}
+
+@mixin info-style {
+  color: var(--dark-color);
+  font-size: rem-convert(22px);
+  font-weight: 800;
+}
+
+@mixin chapter-number {
+  color: var(--gray-300);
+  font-size: rem-convert(16px);
+  font-weight: 700;
+  margin: 0;
+}

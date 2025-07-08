@@ -1,0 +1,61 @@
+@mixin heading($heading) {
+  color: $white;
+  font-family: $font-avenir;
+
+  @if $heading == 'h1' {
+    font-size: rem-convert(64px);
+    font-weight: 800;
+    line-height: 1.13;
+    margin: 0.52em 0;
+
+    @include respond-to($tablet-p-768, max) {
+      font-size: rem-convert(40px);
+    }
+  }
+
+  @if $heading == 'h2' {
+    color: $white;
+    font-size: rem-convert(36px);
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin: 1.5rem 0 0;
+    text-transform: uppercase;
+
+    @include respond-to($tablet-p-768, max) {
+      font-size: rem-convert(32px);
+    }
+  }
+
+  @if $heading == 'h3' {
+    font-size: rem-convert(32px);
+    font-weight: 800;
+    line-height: 1.25;
+    margin: 0.52em 0;
+
+    @include respond-to($tablet-p-768, max) {
+      font-size: rem-convert(24px);
+    }
+  }
+
+  @if $heading == 'h4' {
+    font-size: rem-convert(24px);
+    font-weight: 600;
+    line-height: 1.36;
+    margin: 0.66em 0;
+
+    @include respond-to($tablet-p-768, max) {
+      font-size: rem-convert(20px);
+    }
+  }
+
+  @if $heading == 'h5' {
+    font-size: rem-convert(20px);
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0.52em 0;
+
+    @include respond-to($tablet-p-768, max) {
+      font-size: rem-convert(18px);
+    }
+  }
+}

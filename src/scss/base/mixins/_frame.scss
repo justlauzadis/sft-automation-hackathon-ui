@@ -1,0 +1,31 @@
+@mixin frame($width: null) {
+  @if $width == null {
+    flex: 1 1 auto;
+    width: auto;
+  } @else {
+    $_breakpoint: $width + $page-padding-desktop + $page-padding-desktop;
+    width: rem-convert($width);
+
+    @include respond-to(strip-unit($_breakpoint), max) {
+      flex: 1 1 auto;
+      width: auto;
+    }
+  }
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: rem-convert($page-padding-desktop);
+  padding-right: rem-convert($page-padding-desktop);
+
+  @include respond-to(1024, max) {
+    padding-left: rem-convert($page-padding-tablet);
+    padding-right: rem-convert($page-padding-tablet);
+  }
+
+  @include respond-to(480, max) {
+    padding-left: rem-convert($page-padding-mobile);
+    padding-right: rem-convert($page-padding-mobile);
+  }
+
+  @content;
+}

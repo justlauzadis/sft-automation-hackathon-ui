@@ -1,0 +1,75 @@
+// sass-lint:disable no-duplicate-properties
+:root {
+  // width: max-content;
+  #{--padding-vertical-100}: $padding-vertical-100;
+  #{--padding-vertical-150}: $padding-vertical-150;
+
+  @include respond-to(700, max) {
+    #{--padding-vertical-100}: $padding-vertical-100-mobile;
+    #{--padding-vertical-150}: $padding-vertical-150-mobile;
+  }
+}
+// sass-lint:enable no-duplicate-properties
+
+html,
+body {
+  -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
+  font-family: $font-avenir;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  margin: 0;
+  min-width: 300px;
+
+  @include respond-to($desktop-2560, min) {
+    font-size: body-font-size(16px, $desktop-2560);
+  }
+}
+
+body {
+  background: $gradient-bg-primary;
+  background-attachment: fixed;
+  color: $white;
+
+  .open-mobile-navigation & {
+    -webkit-overflow-scrolling: auto; // sass-lint:disable-line no-vendor-prefixes
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  // To prevent the iPhone and iPad from inflating fonts
+  @include respond-to($tablet-l-1024, max) {
+    -webkit-text-size-adjust: 100%; // sass-lint:disable-line no-vendor-prefixes
+  }
+
+  @include respond-to(900, max) {
+    .open-book-navigation & {
+      -webkit-overflow-scrolling: auto; // sass-lint:disable-line no-vendor-prefixes
+      height: 100vh;
+      overflow: hidden;
+    }
+  }
+}
+
+.noscript {
+  &__wrapper {
+    padding: rem-convert(16px);
+
+    .dark-header & {
+      background: $black;
+    }
+  }
+
+  &__text {
+    background: $purple;
+    border-radius: rem-convert(8px);
+    color: $white;
+    display: block;
+    font-family: $font-avenir;
+    font-weight: 600;
+    padding: rem-convert(16px);
+  }
+}
+
+[disabled] {
+  cursor: not-allowed;
+}

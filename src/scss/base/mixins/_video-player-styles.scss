@@ -1,0 +1,28 @@
+@mixin play-icon-styles {
+  $btn-bg: #404cfa;
+  $btn-bg-hover: #5e6afa;
+
+  @include position(absolute, 50% null null 50%, 1);
+  border-radius: rem-convert(4px);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+
+  .play-button__fill {
+    fill: rgba($btn-bg, 0.8);
+  }
+}
+
+@mixin play-button-styles {
+  @include position(absolute, 50% null null 50%, 1);
+  transform: translate(-50%, -50%);
+
+  &.hidden {
+    display: none;
+  }
+}
+
+@mixin video-element-styles {
+  height: 100% !important; //sass-lint:disable-line no-important
+  position: absolute;
+  width: 100% !important; //sass-lint:disable-line no-important
+}

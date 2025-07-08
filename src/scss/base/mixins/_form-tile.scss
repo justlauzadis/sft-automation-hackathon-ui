@@ -1,0 +1,13 @@
+@mixin form-tile-wrapper-styles {
+  background-color: $white;
+  border-radius: rem-convert(16px);
+  box-shadow: 0 rem-convert(2px) rem-convert(50px) 0 rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  height: 100%;
+  padding: rem-convert(50px);
+
+  @include respond-to($mobile-480, max) {
+    padding: rem-convert(30px) rem-convert(20px);
+  }
+}

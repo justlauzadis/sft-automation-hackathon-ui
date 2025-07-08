@@ -1,0 +1,68 @@
+::selection {
+  // sass-lint:disable-line no-vendor-prefixes
+  background: rgba($gray-200, 0.5);
+}
+
+::-moz-selection {
+  // sass-lint:disable-line no-vendor-prefixes
+  background: rgba($gray-200, 0.5);
+}
+
+h1,
+.heading--h1 {
+  @include heading(h1);
+}
+
+h2,
+.heading--h2 {
+  @include heading(h2);
+}
+
+h3,
+.heading--h3 {
+  @include heading(h3);
+}
+
+h4,
+.heading--h4 {
+  @include heading(h4);
+}
+
+h5,
+.heading--h5 {
+  @include heading(h5);
+}
+
+strong {
+  font-weight: 700;
+}
+
+p {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+a {
+  color: $aqua-450;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:focus,
+  &:hover {
+    color: $white;
+  }
+}
+
+.text {
+  &--larger {
+    font-size: rem-convert(18px);
+    line-height: 1.78;
+  }
+
+  &--smaller {
+    font-size: rem-convert(14px);
+    line-height: 1.3;
+  }
+}

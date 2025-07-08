@@ -1,0 +1,5 @@
+@function body-font-size($font-size, $vw) {
+    $body-font-size: (strip-unit($font-size) / strip-unit($vw)) * 100;
+
+    @return #{round-number($body-font-size, 4, ceil)}vw;
+}
