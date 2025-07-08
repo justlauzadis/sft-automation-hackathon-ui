@@ -30,7 +30,7 @@ const LandingPage = () => {
       <h1 className="title-section__title">
         <span className="title-section__pre-title">WELCOME TO</span>
         {eventConfig.type}
-        <span className="title-section__subtitle">{eventConfig.name} {eventConfig.year}</span>
+        <span className="title-section__subtitle">{eventConfig.name}</span>
       </h1>
     </section>
     <article className="event-description">

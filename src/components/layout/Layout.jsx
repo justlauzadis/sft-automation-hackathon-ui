@@ -45,7 +45,7 @@ const Layout = ({children}) => {
             'background-color': '#FFFFFF',
             color:'#150DF7',
             'font-weight':'800',
-            'padding-left':'8px'}}>{eventConfig.type} {eventConfig.name} {eventConfig.year}</h2>
+            'padding-left':'8px'}}>{eventConfig.type} {eventConfig.name}</h2>
     
     <h2>
       <span id="percentage">{percentage}</span>% complete</h2>
